@@ -1,0 +1,42 @@
+#
+# SubSection 1.0 # Application Section. 
+#
+ResourceType=Application
+ImplementingResourceType=Application
+#
+
+#
+#Properties
+#
+Name=!{applicationName}
+EarFileLocation=/u/deploy/Hello_WorldEAR/Hello_WorldEAR.ear
+TargetCluster=!{clusterName}
+#
+# SubSection 1.0.0 # WebModuleDeployment
+#
+ResourceType=WebModuleDeployment
+ImplementingResourceType=Application
+ResourceId=Cell=!{cellName}:Deployment=!{applicationName}:ApplicationDeployment=:WebModuleDeployment=uri#Hello_World.war
+#
+
+#
+#Properties
+#
+containsEJBContent=0 #integer,default(0)
+deploymentId=1 #required
+startingWeight=10000 #integer,required,default(1)
+name=null
+altDD=null
+classloaderMode=PARENT_LAST #ENUM(PARENT_FIRST|PARENT_LAST),default(PARENT_FIRST)
+uri=Hello_World.war #required
+#applicationDeployment=Cell=!{cellName}:Deployment=!{applicationName}:ApplicationDeployment=ID#ApplicationDeployment_1512561498036
+
+#
+EnvironmentVariablesSection
+#
+#
+#Environment Variables
+
+applicationName=Hello_WorldEAR
+clusterName=Cluster_Corporativo
+cellName=saohlwasapp03Cell
