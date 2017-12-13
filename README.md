@@ -49,11 +49,11 @@ There are 5 fields or tags that you need to modified for your application works 
 
 e.g.:
 
-<\% String directory = "/u/deploy/Hello_WorldEAR"; %>
-<\% String tmpdirectory = "/u/deploy/Hello_WorldEAR/tmp"; %>
-<\title>Hello_WorldEAR</title>
-<\h2 style="text-align: center;">DEPLOY AUTOMATIZADO - Hello_WorldEAR</h2>
-"String str ="/u/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/monitoredDeployableApps/deploymentProperties/Hello_WorldEAR.props";
+- <\% String directory = "/u/deploy/Hello_WorldEAR"; %>
+- <\% String tmpdirectory = "/u/deploy/Hello_WorldEAR/tmp"; %>
+- <\title>Hello_WorldEAR</title>
+- <\h2 style="text-align: center;">DEPLOY AUTOMATIZADO - Hello_WorldEAR</h2>
+- String str ="/u/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/monitoredDeployableApps/deploymentProperties/Hello_WorldEAR.props;
 
 And what you need to do:
 
