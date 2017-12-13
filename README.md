@@ -31,8 +31,7 @@ Firsly, WebSphere allows us to generate a report from the application and with t
 
 - When you enabled the "Monitored Directory Deployment" the WebSphere created a deploymentProperties folder, and what is that? This folder do exactly the same thing that I told in #1 option, in other words, when you update the properties file inside the deploymentProperties folder the magic happens.
 
-
-In wwwwwww you see a example of the file and its absolutely that.
+In https://github.com/tfpereira93/Deployment_App/blob/master/Hello_WorldEAR.props you see a example of the file and its absolutely that.
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,19 +41,19 @@ Simple like fly, the application have a index.jsp with all application that I ha
 
 There are 5 fields or tags that you need to modified for your application works too and its:
 
-- <% String directory = "directory for the EAR upload"; %>
-- <% String tmpdirectory = "directory for the EAR upload/tmp"; %>
-- <title>TITLE YOU WANT</title>
-- <h2 style="text-align: center;">TITLE YOU WANT</h2>
+- <\% String directory = "directory for the EAR upload"; %>
+- <\% String tmpdirectory = "directory for the EAR upload/tmp"; %>
+- <\title>TITLE YOU WANT</title>
+- <\h2 style="text-align: center;">TITLE YOU WANT</h2>
 - String str ="props file";
 
 e.g.:
 
-<% String directory = "/u/deploy/Hello_WorldEAR"; %>
-<% String tmpdirectory = "/u/deploy/Hello_WorldEAR/tmp"; %>
-<title>Hello_WorldEAR</title>
-<h2 style="text-align: center;">DEPLOY AUTOMATIZADO - Hello_WorldEAR</h2>
-String str ="/u/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/monitoredDeployableApps/deploymentProperties/Hello_WorldEAR.props";
+<\% String directory = "/u/deploy/Hello_WorldEAR"; %>
+<\% String tmpdirectory = "/u/deploy/Hello_WorldEAR/tmp"; %>
+<\title>Hello_WorldEAR</title>
+<\h2 style="text-align: center;">DEPLOY AUTOMATIZADO - Hello_WorldEAR</h2>
+"String str ="/u/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/monitoredDeployableApps/deploymentProperties/Hello_WorldEAR.props";
 
 And what you need to do:
 
