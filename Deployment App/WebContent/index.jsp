@@ -5,6 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Deploy App</title>
+<style TYPE="text/css">
+html, body {
+	font-size: 12px;
+	font-family: Verdana;
+	background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+</style>
 </head>
 <body>
 <h3 style="text-align: center;"><span style="color: #808080;"><strong>LISTA DE APLICA&Ccedil;&Otilde;ES</strong></span></h3>

@@ -58,12 +58,14 @@
 <head>
 <title>YMPopup_war</title>
 <style TYPE="text/css">
-<!--
-.style1 {
+html, body {
 	font-size: 12px;
 	font-family: Verdana;
+	background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
 }
--->
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=<%= encoding %>">
 </head>
